@@ -1,0 +1,93 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccxt-venues"
+version = "0.1.0"
+description = "Crypto venues' public market data through CCXT, in an Open Meridian deployment's lake: a data plugin"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
+# Each pinned exactly. The SDK: the sidecar this runs beside speaks one version
+# of the contract, and a range would let a rebuild pick up another; the
+# Dockerfile's base is the same version. CCXT (MIT, ruling 166): bumped at
+# most once per release train, security fixes excepted, with the venue suite
+# as the gate (README, "Bumping CCXT"); venues.py's CCXT_VERSION says the
+# same, and the tests hold the two together.
+dependencies = [
+  "open-meridian==0.36.0",
+  "ccxt==4.5.93",
+]
+
+[project.urls]
+Repository = "https://github.com/open-meridian/plugin-ccxt"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "pytest-asyncio>=0.24",
+  "mypy>=1.11",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+ccxt-venues = "ccxt_venues.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# The synthetic exchanges, the venues' snapshot and the pages' templates,
+# installed beside the code that reads them.
+[tool.setuptools.package-data]
+ccxt_venues = ["synthetic/*.json", "venues.json", "templates/*.html"]
+
+# What this plugin says about itself, which `meridian plugin upload` sends and
+# a deployment admin approves before it runs (W8). Declarations, not grants.
+[tool.meridian]
+# Roles from the deployment's fixed list -- compliance, confirmation,
+# connectivity, custody, data, ems, oms, operations, portfolio, reporting,
+# servicing, settlement, signal -- and its grants are theirs. `data`: it puts each enabled venue's market
+# data into the lake, its codes converted at the edge, and keeps each venue's
+# raw responses in its own storage (W10).
+roles = ["data"]
+# Whether it serves a page through its sidecar.
+interface = true
+# Its declaration: its catalogue, the storage it asks for its raw responses
+# and its settings. Upload reads it from the built image with
+# `meridian-declaration`.
+declaration = "ccxt_venues.declaration:DECLARATION"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["ccxt_venues"]
+known-local-folder = ["venue_cases"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src", "tests"]
+
+# The SDK's gRPC stubs have no types (meridian-python's own configuration
+# says the same).
+[[tool.mypy.overrides]]
+module = [
+    "meridian.v1.sidecar_pb2_grpc",
+    "meridian.v1.envelope_pb2_grpc",
+    "meridian.plugin.v1.operations_pb2_grpc",
+]
+follow_imports = "skip"
+
+# CCXT ships no type information.
+[[tool.mypy.overrides]]
+module = ["ccxt", "ccxt.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

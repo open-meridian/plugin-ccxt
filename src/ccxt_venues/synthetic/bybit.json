@@ -1,0 +1,770 @@
+{
+ "GET /v5/market/instruments-info?category=linear": {
+  "body": {
+   "result": {
+    "category": "linear",
+    "list": [
+     {
+      "baseCoin": "BTC",
+      "contractType": "LinearPerpetual",
+      "copyTrading": "both",
+      "deliveryFeeRate": "",
+      "deliveryTime": "0",
+      "fundingInterval": 480,
+      "launchTime": "1585526400000",
+      "leverageFilter": {
+       "leverageStep": "0.01",
+       "maxLeverage": "100.00",
+       "minLeverage": "1"
+      },
+      "lotSizeFilter": {
+       "maxOrderQty": "100.000",
+       "minOrderQty": "0.001",
+       "postOnlyMaxOrderQty": "1000.000",
+       "qtyStep": "0.001"
+      },
+      "priceFilter": {
+       "maxPrice": "199999.80",
+       "minPrice": "0.10",
+       "tickSize": "0.10"
+      },
+      "priceScale": "2",
+      "quoteCoin": "USDT",
+      "settleCoin": "USDT",
+      "status": "Trading",
+      "symbol": "BTCUSDT",
+      "unifiedMarginTrade": true
+     }
+    ],
+    "nextPageCursor": ""
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/instruments-info?category=linear&status=PreLaunch": {
+  "body": {
+   "result": {
+    "category": "linear",
+    "list": [],
+    "nextPageCursor": ""
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/instruments-info?category=spot": {
+  "body": {
+   "result": {
+    "category": "spot",
+    "list": [
+     {
+      "baseCoin": "BTC",
+      "innovation": "0",
+      "lotSizeFilter": {
+       "basePrecision": "0.000001",
+       "maxOrderAmt": "2000000",
+       "maxOrderQty": "71.7",
+       "minOrderAmt": "1",
+       "minOrderQty": "0.000048",
+       "quotePrecision": "0.00000001"
+      },
+      "marginTrading": "none",
+      "priceFilter": {
+       "tickSize": "0.01"
+      },
+      "quoteCoin": "USDT",
+      "status": "Trading",
+      "symbol": "BTCUSDT"
+     },
+     {
+      "baseCoin": "BTC",
+      "innovation": "0",
+      "lotSizeFilter": {
+       "basePrecision": "0.000001",
+       "maxOrderAmt": "2000000",
+       "maxOrderQty": "71.7",
+       "minOrderAmt": "1",
+       "minOrderQty": "0.000048",
+       "quotePrecision": "0.00000001"
+      },
+      "marginTrading": "none",
+      "priceFilter": {
+       "tickSize": "0.01"
+      },
+      "quoteCoin": "USDC",
+      "status": "Trading",
+      "symbol": "BTCUSDC"
+     },
+     {
+      "baseCoin": "ETH",
+      "innovation": "0",
+      "lotSizeFilter": {
+       "basePrecision": "0.000001",
+       "maxOrderAmt": "2000000",
+       "maxOrderQty": "71.7",
+       "minOrderAmt": "1",
+       "minOrderQty": "0.000048",
+       "quotePrecision": "0.00000001"
+      },
+      "marginTrading": "none",
+      "priceFilter": {
+       "tickSize": "0.01"
+      },
+      "quoteCoin": "USDT",
+      "status": "Trading",
+      "symbol": "ETHUSDT"
+     },
+     {
+      "baseCoin": "TKN",
+      "innovation": "0",
+      "lotSizeFilter": {
+       "basePrecision": "0.000001",
+       "maxOrderAmt": "2000000",
+       "maxOrderQty": "71.7",
+       "minOrderAmt": "1",
+       "minOrderQty": "0.000048",
+       "quotePrecision": "0.00000001"
+      },
+      "marginTrading": "none",
+      "priceFilter": {
+       "tickSize": "0.01"
+      },
+      "quoteCoin": "USDT",
+      "status": "Trading",
+      "symbol": "TKNUSDT"
+     },
+     {
+      "baseCoin": "PLY",
+      "innovation": "0",
+      "lotSizeFilter": {
+       "basePrecision": "0.000001",
+       "maxOrderAmt": "2000000",
+       "maxOrderQty": "71.7",
+       "minOrderAmt": "1",
+       "minOrderQty": "0.000048",
+       "quotePrecision": "0.00000001"
+      },
+      "marginTrading": "none",
+      "priceFilter": {
+       "tickSize": "0.01"
+      },
+      "quoteCoin": "USDT",
+      "status": "Trading",
+      "symbol": "PLYUSDT"
+     },
+     {
+      "baseCoin": "OLD",
+      "innovation": "0",
+      "lotSizeFilter": {
+       "basePrecision": "0.000001",
+       "maxOrderAmt": "2000000",
+       "maxOrderQty": "71.7",
+       "minOrderAmt": "1",
+       "minOrderQty": "0.000048",
+       "quotePrecision": "0.00000001"
+      },
+      "marginTrading": "none",
+      "priceFilter": {
+       "tickSize": "0.01"
+      },
+      "quoteCoin": "USDT",
+      "status": "Closed",
+      "symbol": "OLDUSDT"
+     }
+    ]
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/kline?category=spot&interval=D&symbol=BTCUSDC": {
+  "body": {
+   "result": {
+    "category": "spot",
+    "list": [
+     [
+      "1791504000000",
+      "62100.9",
+      "62100.9",
+      "62100.9",
+      "62100.9",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791417600000",
+      "62001.4",
+      "62001.4",
+      "62001.4",
+      "62001.4",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791331200000",
+      "61801.7",
+      "61801.7",
+      "61801.7",
+      "61801.7",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791244800000",
+      "61702.6",
+      "61702.6",
+      "61702.6",
+      "61702.6",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791158400000",
+      "61500.5",
+      "61500.5",
+      "61500.5",
+      "61500.5",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791072000000",
+      "61333.4",
+      "61333.4",
+      "61333.4",
+      "61333.4",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790985600000",
+      "61010.3",
+      "61010.3",
+      "61010.3",
+      "61010.3",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790899200000",
+      "61450.2",
+      "61450.2",
+      "61450.2",
+      "61450.2",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790812800000",
+      "61200.1",
+      "61200.1",
+      "61200.1",
+      "61200.1",
+      "12.5",
+      "1000"
+     ]
+    ],
+    "symbol": "BTCUSDC"
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/kline?category=spot&interval=D&symbol=BTCUSDT": {
+  "body": {
+   "result": {
+    "category": "spot",
+    "list": [
+     [
+      "1791504000000",
+      "62100.9",
+      "62100.9",
+      "62100.9",
+      "62100.9",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791417600000",
+      "62001.4",
+      "62001.4",
+      "62001.4",
+      "62001.4",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791331200000",
+      "61801.7",
+      "61801.7",
+      "61801.7",
+      "61801.7",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791244800000",
+      "61702.6",
+      "61702.6",
+      "61702.6",
+      "61702.6",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791158400000",
+      "61500.5",
+      "61500.5",
+      "61500.5",
+      "61500.5",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791072000000",
+      "61333.4",
+      "61333.4",
+      "61333.4",
+      "61333.4",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790985600000",
+      "61010.3",
+      "61010.3",
+      "61010.3",
+      "61010.3",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790899200000",
+      "61450.2",
+      "61450.2",
+      "61450.2",
+      "61450.2",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790812800000",
+      "61200.1",
+      "61200.1",
+      "61200.1",
+      "61200.1",
+      "12.5",
+      "1000"
+     ]
+    ],
+    "symbol": "BTCUSDT"
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/kline?category=spot&interval=D&symbol=ETHUSDT": {
+  "body": {
+   "result": {
+    "category": "spot",
+    "list": [
+     [
+      "1791504000000",
+      "2470.9",
+      "2470.9",
+      "2470.9",
+      "2470.9",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791417600000",
+      "2460.8",
+      "2460.8",
+      "2460.8",
+      "2460.8",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791331200000",
+      "2450.7",
+      "2450.7",
+      "2450.7",
+      "2450.7",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791244800000",
+      "2440.6",
+      "2440.6",
+      "2440.6",
+      "2440.6",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791158400000",
+      "2433.5",
+      "2433.5",
+      "2433.5",
+      "2433.5",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791072000000",
+      "2420.4",
+      "2420.4",
+      "2420.4",
+      "2420.4",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790985600000",
+      "2399.3",
+      "2399.3",
+      "2399.3",
+      "2399.3",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790899200000",
+      "2410.2",
+      "2410.2",
+      "2410.2",
+      "2410.2",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790812800000",
+      "2401.1",
+      "2401.1",
+      "2401.1",
+      "2401.1",
+      "12.5",
+      "1000"
+     ]
+    ],
+    "symbol": "ETHUSDT"
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/kline?category=spot&interval=D&symbol=PLYUSDT": {
+  "body": {
+   "result": {
+    "category": "spot",
+    "list": [
+     [
+      "1791504000000",
+      "1.1",
+      "1.1",
+      "1.1",
+      "1.1",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791417600000",
+      "1.1",
+      "1.1",
+      "1.1",
+      "1.1",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791331200000",
+      "1.1",
+      "1.1",
+      "1.1",
+      "1.1",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791244800000",
+      "1.1",
+      "1.1",
+      "1.1",
+      "1.1",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791158400000",
+      "1.1",
+      "1.1",
+      "1.1",
+      "1.1",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791072000000",
+      "1.1",
+      "1.1",
+      "1.1",
+      "1.1",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790985600000",
+      "1.1",
+      "1.1",
+      "1.1",
+      "1.1",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790899200000",
+      "1.1",
+      "1.1",
+      "1.1",
+      "1.1",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790812800000",
+      "1.1",
+      "1.1",
+      "1.1",
+      "1.1",
+      "12.5",
+      "1000"
+     ]
+    ],
+    "symbol": "PLYUSDT"
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/kline?category=spot&interval=D&symbol=TKNUSDT": {
+  "body": {
+   "result": {
+    "category": "spot",
+    "list": [
+     [
+      "1791504000000",
+      "0.000012345678901299",
+      "0.000012345678901299",
+      "0.000012345678901299",
+      "0.000012345678901299",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791417600000",
+      "0.000012345678901234",
+      "0.000012345678901234",
+      "0.000012345678901234",
+      "0.000012345678901234",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791331200000",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791244800000",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791158400000",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1791072000000",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790985600000",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790899200000",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "12.5",
+      "1000"
+     ],
+     [
+      "1790812800000",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "0.000012000000000001",
+      "12.5",
+      "1000"
+     ]
+    ],
+    "symbol": "TKNUSDT"
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/tickers?category=linear&symbol=BTCUSDT": {
+  "body": {
+   "result": {
+    "category": "linear",
+    "list": [
+     {
+      "ask1Price": "61980.2",
+      "ask1Size": "0.33",
+      "bid1Price": "61980.0",
+      "bid1Size": "0.92",
+      "highPrice24h": "61980.1",
+      "lastPrice": "61980.1",
+      "lowPrice24h": "61980.1",
+      "prevPrice24h": "61980.1",
+      "price24hPcnt": "0",
+      "symbol": "BTCUSDT",
+      "turnover24h": "1",
+      "volume24h": "1"
+     }
+    ]
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/tickers?category=spot&symbol=BTCUSDC": {
+  "body": {
+   "result": {
+    "category": "spot",
+    "list": [
+     {
+      "ask1Price": "62007.4",
+      "ask1Size": "0.33",
+      "bid1Price": "62007.1",
+      "bid1Size": "0.92",
+      "highPrice24h": "62006.75",
+      "lastPrice": "62006.75",
+      "lowPrice24h": "62006.75",
+      "prevPrice24h": "62006.75",
+      "price24hPcnt": "0",
+      "symbol": "BTCUSDC",
+      "turnover24h": "1",
+      "volume24h": "1"
+     }
+    ]
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/tickers?category=spot&symbol=BTCUSDT": {
+  "body": {
+   "result": {
+    "category": "spot",
+    "list": [
+     {
+      "ask1Price": "61991.8",
+      "ask1Size": "0.33",
+      "bid1Price": "61991.7",
+      "bid1Size": "0.92",
+      "highPrice24h": "61988.9",
+      "lastPrice": "61988.9",
+      "lowPrice24h": "61988.9",
+      "prevPrice24h": "61988.9",
+      "price24hPcnt": "0",
+      "symbol": "BTCUSDT",
+      "turnover24h": "1",
+      "volume24h": "1"
+     }
+    ]
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ },
+ "GET /v5/market/tickers?category=spot&symbol=TKNUSDT": {
+  "body": {
+   "result": {
+    "category": "spot",
+    "list": [
+     {
+      "ask1Price": "",
+      "ask1Size": "",
+      "bid1Price": "0.000012345678901",
+      "bid1Size": "0.92",
+      "highPrice24h": "0.000012345678901234",
+      "lastPrice": "0.000012345678901234",
+      "lowPrice24h": "0.000012345678901234",
+      "prevPrice24h": "0.000012345678901234",
+      "price24hPcnt": "0",
+      "symbol": "TKNUSDT",
+      "turnover24h": "1",
+      "volume24h": "1"
+     }
+    ]
+   },
+   "retCode": 0,
+   "retExtInfo": {},
+   "retMsg": "OK",
+   "time": 1791633599000
+  }
+ }
+}

@@ -1,0 +1,11 @@
+plugin-ccxt
+Copyright 2026 Societal Lab Inc.
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+It depends on CCXT (https://github.com/ccxt/ccxt), MIT-licensed, installed as a
+package at the version pyproject.toml pins; no CCXT source is copied here.
+
+Each venue's name is a trademark of its owner. This project is not affiliated
+with or endorsed by any venue or by CCXT; it reads each venue's public market
+data, which is subject to that venue's own terms (README, "Each venue's terms").

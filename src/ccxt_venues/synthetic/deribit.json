@@ -1,0 +1,221 @@
+{
+ "GET /api/v2/public/get_currencies": {
+  "body": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "apr": 0,
+     "coin_type": "BITCOIN",
+     "currency": "BTC",
+     "currency_long": "Bitcoin",
+     "decimals": 8,
+     "fee_precision": 4,
+     "in_cross_collateral_pool": true,
+     "min_confirmations": 1,
+     "min_withdrawal_fee": 0.0001,
+     "network_fee": 0.0001,
+     "withdrawal_fee": 0.0001,
+     "withdrawal_priorities": []
+    }
+   ],
+   "testnet": false,
+   "usDiff": 1,
+   "usIn": 1,
+   "usOut": 2
+  }
+ },
+ "GET /api/v2/public/get_instruments": {
+  "body": {
+   "jsonrpc": "2.0",
+   "result": [
+    {
+     "base_currency": "BTC",
+     "block_trade_commission": 0.0005,
+     "block_trade_min_trade_amount": 25,
+     "block_trade_tick_size": 0.01,
+     "contract_size": 1,
+     "counter_currency": "USDC",
+     "creation_timestamp": 1534242287000,
+     "expiration_timestamp": 32503708800000,
+     "instrument_id": 1,
+     "instrument_name": "BTC_USDC",
+     "instrument_type": "linear",
+     "is_active": true,
+     "kind": "spot",
+     "maker_commission": 0,
+     "max_leverage": 50,
+     "max_liquidation_commission": 0.0075,
+     "min_trade_amount": 0.0001,
+     "price_index": "btc_usd",
+     "quote_currency": "USDC",
+     "rfq": false,
+     "settlement_currency": "USDC",
+     "settlement_period": "perpetual",
+     "taker_commission": 0.0005,
+     "tick_size": 0.5,
+     "tick_size_steps": []
+    },
+    {
+     "base_currency": "ETH",
+     "block_trade_commission": 0.0005,
+     "block_trade_min_trade_amount": 25,
+     "block_trade_tick_size": 0.01,
+     "contract_size": 1,
+     "counter_currency": "USDC",
+     "creation_timestamp": 1534242287000,
+     "expiration_timestamp": 32503708800000,
+     "instrument_id": 1,
+     "instrument_name": "ETH_USDC",
+     "instrument_type": "linear",
+     "is_active": true,
+     "kind": "spot",
+     "maker_commission": 0,
+     "max_leverage": 50,
+     "max_liquidation_commission": 0.0075,
+     "min_trade_amount": 0.0001,
+     "price_index": "eth_usd",
+     "quote_currency": "USDC",
+     "rfq": false,
+     "settlement_currency": "USDC",
+     "settlement_period": "perpetual",
+     "taker_commission": 0.0005,
+     "tick_size": 0.5,
+     "tick_size_steps": []
+    },
+    {
+     "base_currency": "TKN",
+     "block_trade_commission": 0.0005,
+     "block_trade_min_trade_amount": 25,
+     "block_trade_tick_size": 0.01,
+     "contract_size": 1,
+     "counter_currency": "USDC",
+     "creation_timestamp": 1534242287000,
+     "expiration_timestamp": 32503708800000,
+     "instrument_id": 1,
+     "instrument_name": "TKN_USDC",
+     "instrument_type": "linear",
+     "is_active": true,
+     "kind": "spot",
+     "maker_commission": 0,
+     "max_leverage": 50,
+     "max_liquidation_commission": 0.0075,
+     "min_trade_amount": 0.0001,
+     "price_index": "tkn_usd",
+     "quote_currency": "USDC",
+     "rfq": false,
+     "settlement_currency": "USDC",
+     "settlement_period": "perpetual",
+     "taker_commission": 0.0005,
+     "tick_size": 0.5,
+     "tick_size_steps": []
+    },
+    {
+     "base_currency": "PLY",
+     "block_trade_commission": 0.0005,
+     "block_trade_min_trade_amount": 25,
+     "block_trade_tick_size": 0.01,
+     "contract_size": 1,
+     "counter_currency": "USDC",
+     "creation_timestamp": 1534242287000,
+     "expiration_timestamp": 32503708800000,
+     "instrument_id": 1,
+     "instrument_name": "PLY_USDC",
+     "instrument_type": "linear",
+     "is_active": true,
+     "kind": "spot",
+     "maker_commission": 0,
+     "max_leverage": 50,
+     "max_liquidation_commission": 0.0075,
+     "min_trade_amount": 0.0001,
+     "price_index": "ply_usd",
+     "quote_currency": "USDC",
+     "rfq": false,
+     "settlement_currency": "USDC",
+     "settlement_period": "perpetual",
+     "taker_commission": 0.0005,
+     "tick_size": 0.5,
+     "tick_size_steps": []
+    },
+    {
+     "base_currency": "OLD",
+     "block_trade_commission": 0.0005,
+     "block_trade_min_trade_amount": 25,
+     "block_trade_tick_size": 0.01,
+     "contract_size": 1,
+     "counter_currency": "USDC",
+     "creation_timestamp": 1534242287000,
+     "expiration_timestamp": 32503708800000,
+     "instrument_id": 1,
+     "instrument_name": "OLD_USDC",
+     "instrument_type": "linear",
+     "is_active": false,
+     "kind": "spot",
+     "maker_commission": 0,
+     "max_leverage": 50,
+     "max_liquidation_commission": 0.0075,
+     "min_trade_amount": 0.0001,
+     "price_index": "old_usd",
+     "quote_currency": "USDC",
+     "rfq": false,
+     "settlement_currency": "USDC",
+     "settlement_period": "perpetual",
+     "taker_commission": 0.0005,
+     "tick_size": 0.5,
+     "tick_size_steps": []
+    },
+    {
+     "base_currency": "BTC",
+     "block_trade_commission": 0.0005,
+     "block_trade_min_trade_amount": 25,
+     "block_trade_tick_size": 0.01,
+     "contract_size": 10,
+     "counter_currency": "USD",
+     "creation_timestamp": 1534242287000,
+     "expiration_timestamp": 32503708800000,
+     "instrument_id": 1,
+     "instrument_name": "BTC-PERPETUAL",
+     "instrument_type": "reversed",
+     "is_active": true,
+     "kind": "future",
+     "maker_commission": 0,
+     "max_leverage": 50,
+     "max_liquidation_commission": 0.0075,
+     "min_trade_amount": 0.0001,
+     "price_index": "btc_usd",
+     "quote_currency": "USD",
+     "rfq": false,
+     "settlement_currency": "BTC",
+     "settlement_period": "perpetual",
+     "taker_commission": 0.0005,
+     "tick_size": 0.5,
+     "tick_size_steps": []
+    }
+   ],
+   "testnet": false,
+   "usDiff": 1,
+   "usIn": 1,
+   "usOut": 2
+  }
+ },
+ "GET /api/v2/public/get_tradingview_chart_data?instrument_name=BTC_USDC&resolution=1D": {
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"volume\":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5],\"ticks\":[1790812800000,1790899200000,1790985600000,1791072000000,1791158400000,1791244800000,1791331200000,1791417600000,1791504000000],\"status\":\"ok\",\"open\":[61200.1,61450.2,61010.3,61333.4,61500.5,61702.6,61801.7,62001.4,62100.9],\"low\":[61200.1,61450.2,61010.3,61333.4,61500.5,61702.6,61801.7,62001.4,62100.9],\"high\":[61200.1,61450.2,61010.3,61333.4,61500.5,61702.6,61801.7,62001.4,62100.9],\"cost\":[1,1,1,1,1,1,1,1,1],\"close\":[61200.1,61450.2,61010.3,61333.4,61500.5,61702.6,61801.7,62001.4,62100.9]},\"usIn\":1,\"usOut\":2,\"usDiff\":1,\"testnet\":false}"
+ },
+ "GET /api/v2/public/get_tradingview_chart_data?instrument_name=ETH_USDC&resolution=1D": {
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"volume\":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5],\"ticks\":[1790812800000,1790899200000,1790985600000,1791072000000,1791158400000,1791244800000,1791331200000,1791417600000,1791504000000],\"status\":\"ok\",\"open\":[2401.1,2410.2,2399.3,2420.4,2433.5,2440.6,2450.7,2460.8,2470.9],\"low\":[2401.1,2410.2,2399.3,2420.4,2433.5,2440.6,2450.7,2460.8,2470.9],\"high\":[2401.1,2410.2,2399.3,2420.4,2433.5,2440.6,2450.7,2460.8,2470.9],\"cost\":[1,1,1,1,1,1,1,1,1],\"close\":[2401.1,2410.2,2399.3,2420.4,2433.5,2440.6,2450.7,2460.8,2470.9]},\"usIn\":1,\"usOut\":2,\"usDiff\":1,\"testnet\":false}"
+ },
+ "GET /api/v2/public/get_tradingview_chart_data?instrument_name=PLY_USDC&resolution=1D": {
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"volume\":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5],\"ticks\":[1790812800000,1790899200000,1790985600000,1791072000000,1791158400000,1791244800000,1791331200000,1791417600000,1791504000000],\"status\":\"ok\",\"open\":[1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1],\"low\":[1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1],\"high\":[1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1],\"cost\":[1,1,1,1,1,1,1,1,1],\"close\":[1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1,1.1]},\"usIn\":1,\"usOut\":2,\"usDiff\":1,\"testnet\":false}"
+ },
+ "GET /api/v2/public/get_tradingview_chart_data?instrument_name=TKN_USDC&resolution=1D": {
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"volume\":[12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5],\"ticks\":[1790812800000,1790899200000,1790985600000,1791072000000,1791158400000,1791244800000,1791331200000,1791417600000,1791504000000],\"status\":\"ok\",\"open\":[0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012345678901234,0.000012345678901299],\"low\":[0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012345678901234,0.000012345678901299],\"high\":[0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012345678901234,0.000012345678901299],\"cost\":[1,1,1,1,1,1,1,1,1],\"close\":[0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012000000000001,0.000012345678901234,0.000012345678901299]},\"usIn\":1,\"usOut\":2,\"usDiff\":1,\"testnet\":false}"
+ },
+ "GET /api/v2/public/ticker?instrument_name=BTC-PERPETUAL": {
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"timestamp\":1791633599000,\"state\":\"open\",\"stats\":{\"volume\":1,\"price_change\":0,\"low\":61980.5,\"high\":61980.5},\"open_interest\":0,\"min_price\":1,\"max_price\":100000,\"mark_price\":61980.5,\"last_price\":61980.5,\"instrument_name\":\"BTC-PERPETUAL\",\"index_price\":61980.5,\"estimated_delivery_price\":61980.5,\"best_bid_price\":61980.0,\"best_bid_amount\":0.92,\"best_ask_price\":61981.0,\"best_ask_amount\":0.33},\"usIn\":1,\"usOut\":2,\"usDiff\":1,\"testnet\":false}"
+ },
+ "GET /api/v2/public/ticker?instrument_name=BTC_USDC": {
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"timestamp\":1791633599000,\"state\":\"open\",\"stats\":{\"volume\":1,\"price_change\":0,\"low\":62006.75,\"high\":62006.75},\"open_interest\":0,\"min_price\":1,\"max_price\":100000,\"mark_price\":62006.75,\"last_price\":62006.75,\"instrument_name\":\"BTC_USDC\",\"index_price\":62006.75,\"estimated_delivery_price\":62006.75,\"best_bid_price\":62007.1,\"best_bid_amount\":0.92,\"best_ask_price\":62007.4,\"best_ask_amount\":0.33},\"usIn\":1,\"usOut\":2,\"usDiff\":1,\"testnet\":false}"
+ },
+ "GET /api/v2/public/ticker?instrument_name=TKN_USDC": {
+  "body": "{\"jsonrpc\":\"2.0\",\"result\":{\"timestamp\":1791633599000,\"state\":\"open\",\"stats\":{\"volume\":1,\"price_change\":0,\"low\":0.000012345678901234,\"high\":0.000012345678901234},\"open_interest\":0,\"min_price\":1,\"max_price\":100000,\"mark_price\":0.000012345678901234,\"last_price\":0.000012345678901234,\"instrument_name\":\"TKN_USDC\",\"index_price\":0.000012345678901234,\"estimated_delivery_price\":0.000012345678901234,\"best_bid_price\":0.000012345678901,\"best_bid_amount\":0.92,\"best_ask_price\":0,\"best_ask_amount\":0},\"usIn\":1,\"usOut\":2,\"usDiff\":1,\"testnet\":false}"
+ }
+}

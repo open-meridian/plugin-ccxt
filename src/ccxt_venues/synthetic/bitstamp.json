@@ -1,0 +1,662 @@
+{
+ "GET /api/v2/markets/": {
+  "body": [
+   {
+    "base_currency": "BTC",
+    "base_decimals": 8,
+    "counter_currency": "USD",
+    "counter_decimals": 2,
+    "description": "BTC / USD",
+    "instant_and_market_orders": "Enabled",
+    "instant_order_counter_decimals": 2,
+    "market_symbol": "btcusd",
+    "market_type": "SPOT",
+    "maximum_order_amount": "",
+    "maximum_order_value": "",
+    "minimum_order_amount": "0.00000001",
+    "minimum_order_value": "10.0",
+    "name": "BTC/USD",
+    "trading": "Enabled"
+   },
+   {
+    "base_currency": "BTC",
+    "base_decimals": 8,
+    "counter_currency": "USDC",
+    "counter_decimals": 8,
+    "description": "BTC / USDC",
+    "instant_and_market_orders": "Enabled",
+    "instant_order_counter_decimals": 2,
+    "market_symbol": "btcusdc",
+    "market_type": "SPOT",
+    "maximum_order_amount": "",
+    "maximum_order_value": "",
+    "minimum_order_amount": "0.00000001",
+    "minimum_order_value": "10.0",
+    "name": "BTC/USDC",
+    "trading": "Enabled"
+   },
+   {
+    "base_currency": "ETH",
+    "base_decimals": 8,
+    "counter_currency": "USD",
+    "counter_decimals": 2,
+    "description": "ETH / USD",
+    "instant_and_market_orders": "Enabled",
+    "instant_order_counter_decimals": 2,
+    "market_symbol": "ethusd",
+    "market_type": "SPOT",
+    "maximum_order_amount": "",
+    "maximum_order_value": "",
+    "minimum_order_amount": "0.00000001",
+    "minimum_order_value": "10.0",
+    "name": "ETH/USD",
+    "trading": "Enabled"
+   },
+   {
+    "base_currency": "TKN",
+    "base_decimals": 8,
+    "counter_currency": "USD",
+    "counter_decimals": 2,
+    "description": "TKN / USD",
+    "instant_and_market_orders": "Enabled",
+    "instant_order_counter_decimals": 2,
+    "market_symbol": "tknusd",
+    "market_type": "SPOT",
+    "maximum_order_amount": "",
+    "maximum_order_value": "",
+    "minimum_order_amount": "0.00000001",
+    "minimum_order_value": "10.0",
+    "name": "TKN/USD",
+    "trading": "Enabled"
+   },
+   {
+    "base_currency": "PLY",
+    "base_decimals": 8,
+    "counter_currency": "USD",
+    "counter_decimals": 2,
+    "description": "PLY / USD",
+    "instant_and_market_orders": "Enabled",
+    "instant_order_counter_decimals": 2,
+    "market_symbol": "plyusd",
+    "market_type": "SPOT",
+    "maximum_order_amount": "",
+    "maximum_order_value": "",
+    "minimum_order_amount": "0.00000001",
+    "minimum_order_value": "10.0",
+    "name": "PLY/USD",
+    "trading": "Enabled"
+   },
+   {
+    "base_currency": "EUR",
+    "base_decimals": 8,
+    "counter_currency": "USD",
+    "counter_decimals": 2,
+    "description": "EUR / USD",
+    "instant_and_market_orders": "Enabled",
+    "instant_order_counter_decimals": 2,
+    "market_symbol": "eurusd",
+    "market_type": "SPOT",
+    "maximum_order_amount": "",
+    "maximum_order_value": "",
+    "minimum_order_amount": "0.00000001",
+    "minimum_order_value": "10.0",
+    "name": "EUR/USD",
+    "trading": "Enabled"
+   },
+   {
+    "base_currency": "OLD",
+    "base_decimals": 8,
+    "counter_currency": "USD",
+    "counter_decimals": 2,
+    "description": "OLD / USD",
+    "instant_and_market_orders": "Disabled",
+    "instant_order_counter_decimals": 2,
+    "market_symbol": "oldusd",
+    "market_type": "SPOT",
+    "maximum_order_amount": "",
+    "maximum_order_value": "",
+    "minimum_order_amount": "0.00000001",
+    "minimum_order_value": "10.0",
+    "name": "OLD/USD",
+    "trading": "Disabled"
+   }
+  ]
+ },
+ "GET /api/v2/ohlc/btcusd/?step=86400": {
+  "body": {
+   "data": {
+    "ohlc": [
+     {
+      "close": "61200.1",
+      "high": "61200.1",
+      "low": "61200.1",
+      "open": "61200.1",
+      "timestamp": "1790812800",
+      "volume": "12.5"
+     },
+     {
+      "close": "61450.2",
+      "high": "61450.2",
+      "low": "61450.2",
+      "open": "61450.2",
+      "timestamp": "1790899200",
+      "volume": "12.5"
+     },
+     {
+      "close": "61010.3",
+      "high": "61010.3",
+      "low": "61010.3",
+      "open": "61010.3",
+      "timestamp": "1790985600",
+      "volume": "12.5"
+     },
+     {
+      "close": "61333.4",
+      "high": "61333.4",
+      "low": "61333.4",
+      "open": "61333.4",
+      "timestamp": "1791072000",
+      "volume": "12.5"
+     },
+     {
+      "close": "61500.5",
+      "high": "61500.5",
+      "low": "61500.5",
+      "open": "61500.5",
+      "timestamp": "1791158400",
+      "volume": "12.5"
+     },
+     {
+      "close": "61702.6",
+      "high": "61702.6",
+      "low": "61702.6",
+      "open": "61702.6",
+      "timestamp": "1791244800",
+      "volume": "12.5"
+     },
+     {
+      "close": "61801.7",
+      "high": "61801.7",
+      "low": "61801.7",
+      "open": "61801.7",
+      "timestamp": "1791331200",
+      "volume": "12.5"
+     },
+     {
+      "close": "62001.4",
+      "high": "62001.4",
+      "low": "62001.4",
+      "open": "62001.4",
+      "timestamp": "1791417600",
+      "volume": "12.5"
+     },
+     {
+      "close": "62100.9",
+      "high": "62100.9",
+      "low": "62100.9",
+      "open": "62100.9",
+      "timestamp": "1791504000",
+      "volume": "12.5"
+     }
+    ],
+    "pair": "BTC/USD"
+   }
+  }
+ },
+ "GET /api/v2/ohlc/btcusdc/?step=86400": {
+  "body": {
+   "data": {
+    "ohlc": [
+     {
+      "close": "61200.1",
+      "high": "61200.1",
+      "low": "61200.1",
+      "open": "61200.1",
+      "timestamp": "1790812800",
+      "volume": "12.5"
+     },
+     {
+      "close": "61450.2",
+      "high": "61450.2",
+      "low": "61450.2",
+      "open": "61450.2",
+      "timestamp": "1790899200",
+      "volume": "12.5"
+     },
+     {
+      "close": "61010.3",
+      "high": "61010.3",
+      "low": "61010.3",
+      "open": "61010.3",
+      "timestamp": "1790985600",
+      "volume": "12.5"
+     },
+     {
+      "close": "61333.4",
+      "high": "61333.4",
+      "low": "61333.4",
+      "open": "61333.4",
+      "timestamp": "1791072000",
+      "volume": "12.5"
+     },
+     {
+      "close": "61500.5",
+      "high": "61500.5",
+      "low": "61500.5",
+      "open": "61500.5",
+      "timestamp": "1791158400",
+      "volume": "12.5"
+     },
+     {
+      "close": "61702.6",
+      "high": "61702.6",
+      "low": "61702.6",
+      "open": "61702.6",
+      "timestamp": "1791244800",
+      "volume": "12.5"
+     },
+     {
+      "close": "61801.7",
+      "high": "61801.7",
+      "low": "61801.7",
+      "open": "61801.7",
+      "timestamp": "1791331200",
+      "volume": "12.5"
+     },
+     {
+      "close": "62001.4",
+      "high": "62001.4",
+      "low": "62001.4",
+      "open": "62001.4",
+      "timestamp": "1791417600",
+      "volume": "12.5"
+     },
+     {
+      "close": "62100.9",
+      "high": "62100.9",
+      "low": "62100.9",
+      "open": "62100.9",
+      "timestamp": "1791504000",
+      "volume": "12.5"
+     }
+    ],
+    "pair": "BTC/USDC"
+   }
+  }
+ },
+ "GET /api/v2/ohlc/ethusd/?step=86400": {
+  "body": {
+   "data": {
+    "ohlc": [
+     {
+      "close": "2401.1",
+      "high": "2401.1",
+      "low": "2401.1",
+      "open": "2401.1",
+      "timestamp": "1790812800",
+      "volume": "12.5"
+     },
+     {
+      "close": "2410.2",
+      "high": "2410.2",
+      "low": "2410.2",
+      "open": "2410.2",
+      "timestamp": "1790899200",
+      "volume": "12.5"
+     },
+     {
+      "close": "2399.3",
+      "high": "2399.3",
+      "low": "2399.3",
+      "open": "2399.3",
+      "timestamp": "1790985600",
+      "volume": "12.5"
+     },
+     {
+      "close": "2420.4",
+      "high": "2420.4",
+      "low": "2420.4",
+      "open": "2420.4",
+      "timestamp": "1791072000",
+      "volume": "12.5"
+     },
+     {
+      "close": "2433.5",
+      "high": "2433.5",
+      "low": "2433.5",
+      "open": "2433.5",
+      "timestamp": "1791158400",
+      "volume": "12.5"
+     },
+     {
+      "close": "2440.6",
+      "high": "2440.6",
+      "low": "2440.6",
+      "open": "2440.6",
+      "timestamp": "1791244800",
+      "volume": "12.5"
+     },
+     {
+      "close": "2450.7",
+      "high": "2450.7",
+      "low": "2450.7",
+      "open": "2450.7",
+      "timestamp": "1791331200",
+      "volume": "12.5"
+     },
+     {
+      "close": "2460.8",
+      "high": "2460.8",
+      "low": "2460.8",
+      "open": "2460.8",
+      "timestamp": "1791417600",
+      "volume": "12.5"
+     },
+     {
+      "close": "2470.9",
+      "high": "2470.9",
+      "low": "2470.9",
+      "open": "2470.9",
+      "timestamp": "1791504000",
+      "volume": "12.5"
+     }
+    ],
+    "pair": "ETH/USD"
+   }
+  }
+ },
+ "GET /api/v2/ohlc/eurusd/?step=86400": {
+  "body": {
+   "data": {
+    "ohlc": [
+     {
+      "close": "1.0801",
+      "high": "1.0801",
+      "low": "1.0801",
+      "open": "1.0801",
+      "timestamp": "1790812800",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.0801",
+      "high": "1.0801",
+      "low": "1.0801",
+      "open": "1.0801",
+      "timestamp": "1790899200",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.0801",
+      "high": "1.0801",
+      "low": "1.0801",
+      "open": "1.0801",
+      "timestamp": "1790985600",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.0801",
+      "high": "1.0801",
+      "low": "1.0801",
+      "open": "1.0801",
+      "timestamp": "1791072000",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.0801",
+      "high": "1.0801",
+      "low": "1.0801",
+      "open": "1.0801",
+      "timestamp": "1791158400",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.0801",
+      "high": "1.0801",
+      "low": "1.0801",
+      "open": "1.0801",
+      "timestamp": "1791244800",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.0801",
+      "high": "1.0801",
+      "low": "1.0801",
+      "open": "1.0801",
+      "timestamp": "1791331200",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.0801",
+      "high": "1.0801",
+      "low": "1.0801",
+      "open": "1.0801",
+      "timestamp": "1791417600",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.0801",
+      "high": "1.0801",
+      "low": "1.0801",
+      "open": "1.0801",
+      "timestamp": "1791504000",
+      "volume": "12.5"
+     }
+    ],
+    "pair": "EUR/USD"
+   }
+  }
+ },
+ "GET /api/v2/ohlc/plyusd/?step=86400": {
+  "body": {
+   "data": {
+    "ohlc": [
+     {
+      "close": "1.1",
+      "high": "1.1",
+      "low": "1.1",
+      "open": "1.1",
+      "timestamp": "1790812800",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.1",
+      "high": "1.1",
+      "low": "1.1",
+      "open": "1.1",
+      "timestamp": "1790899200",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.1",
+      "high": "1.1",
+      "low": "1.1",
+      "open": "1.1",
+      "timestamp": "1790985600",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.1",
+      "high": "1.1",
+      "low": "1.1",
+      "open": "1.1",
+      "timestamp": "1791072000",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.1",
+      "high": "1.1",
+      "low": "1.1",
+      "open": "1.1",
+      "timestamp": "1791158400",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.1",
+      "high": "1.1",
+      "low": "1.1",
+      "open": "1.1",
+      "timestamp": "1791244800",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.1",
+      "high": "1.1",
+      "low": "1.1",
+      "open": "1.1",
+      "timestamp": "1791331200",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.1",
+      "high": "1.1",
+      "low": "1.1",
+      "open": "1.1",
+      "timestamp": "1791417600",
+      "volume": "12.5"
+     },
+     {
+      "close": "1.1",
+      "high": "1.1",
+      "low": "1.1",
+      "open": "1.1",
+      "timestamp": "1791504000",
+      "volume": "12.5"
+     }
+    ],
+    "pair": "PLY/USD"
+   }
+  }
+ },
+ "GET /api/v2/ohlc/tknusd/?step=86400": {
+  "body": {
+   "data": {
+    "ohlc": [
+     {
+      "close": "0.000012000000000001",
+      "high": "0.000012000000000001",
+      "low": "0.000012000000000001",
+      "open": "0.000012000000000001",
+      "timestamp": "1790812800",
+      "volume": "12.5"
+     },
+     {
+      "close": "0.000012000000000001",
+      "high": "0.000012000000000001",
+      "low": "0.000012000000000001",
+      "open": "0.000012000000000001",
+      "timestamp": "1790899200",
+      "volume": "12.5"
+     },
+     {
+      "close": "0.000012000000000001",
+      "high": "0.000012000000000001",
+      "low": "0.000012000000000001",
+      "open": "0.000012000000000001",
+      "timestamp": "1790985600",
+      "volume": "12.5"
+     },
+     {
+      "close": "0.000012000000000001",
+      "high": "0.000012000000000001",
+      "low": "0.000012000000000001",
+      "open": "0.000012000000000001",
+      "timestamp": "1791072000",
+      "volume": "12.5"
+     },
+     {
+      "close": "0.000012000000000001",
+      "high": "0.000012000000000001",
+      "low": "0.000012000000000001",
+      "open": "0.000012000000000001",
+      "timestamp": "1791158400",
+      "volume": "12.5"
+     },
+     {
+      "close": "0.000012000000000001",
+      "high": "0.000012000000000001",
+      "low": "0.000012000000000001",
+      "open": "0.000012000000000001",
+      "timestamp": "1791244800",
+      "volume": "12.5"
+     },
+     {
+      "close": "0.000012000000000001",
+      "high": "0.000012000000000001",
+      "low": "0.000012000000000001",
+      "open": "0.000012000000000001",
+      "timestamp": "1791331200",
+      "volume": "12.5"
+     },
+     {
+      "close": "0.000012345678901234",
+      "high": "0.000012345678901234",
+      "low": "0.000012345678901234",
+      "open": "0.000012345678901234",
+      "timestamp": "1791417600",
+      "volume": "12.5"
+     },
+     {
+      "close": "0.000012345678901299",
+      "high": "0.000012345678901299",
+      "low": "0.000012345678901299",
+      "open": "0.000012345678901299",
+      "timestamp": "1791504000",
+      "volume": "12.5"
+     }
+    ],
+    "pair": "TKN/USD"
+   }
+  }
+ },
+ "GET /api/v2/ticker/btcusd/": {
+  "body": {
+   "ask": "61991.8",
+   "bid": "61991.7",
+   "high": "61988.9",
+   "last": "61988.9",
+   "low": "61988.9",
+   "open": "61988.9",
+   "open_24": "61988.9",
+   "pair": "x",
+   "percent_change_24": "0",
+   "side": "0",
+   "timestamp": "1791633599",
+   "volume": "1",
+   "vwap": "61988.9"
+  }
+ },
+ "GET /api/v2/ticker/btcusdc/": {
+  "body": {
+   "ask": "62007.4",
+   "bid": "62007.1",
+   "high": "62006.75",
+   "last": "62006.75",
+   "low": "62006.75",
+   "open": "62006.75",
+   "open_24": "62006.75",
+   "pair": "x",
+   "percent_change_24": "0",
+   "side": "0",
+   "timestamp": "1791633599",
+   "volume": "1",
+   "vwap": "62006.75"
+  }
+ },
+ "GET /api/v2/ticker/tknusd/": {
+  "body": {
+   "ask": "",
+   "bid": "0.000012345678901",
+   "high": "0.000012345678901234",
+   "last": "0.000012345678901234",
+   "low": "0.000012345678901234",
+   "open": "0.000012345678901234",
+   "open_24": "0.000012345678901234",
+   "pair": "x",
+   "percent_change_24": "0",
+   "side": "0",
+   "timestamp": "1791633599",
+   "volume": "1",
+   "vwap": "0.000012345678901234"
+  }
+ }
+}
