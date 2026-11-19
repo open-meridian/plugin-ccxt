@@ -132,3 +132,30 @@ async def test_licences_are_read_for_each_venues_datasets() -> None:
     await lake.read_licences()
     assert lake.feeds["okx"].licensed == frozenset({"ccxt:okx_daily"})
     assert lake.feeds["bybit"].licensed == frozenset()
+
+
+async def test_settings_turn_venues_on_and_sample_data_maps_them_at_once(tmp_path: object) -> None:
+    """Sample data on and OKX turned on: OKX's synthetic listing is read at
+    once, before anything is wanted; Bybit, off, is never asked."""
+    from pathlib import Path
+    from types import SimpleNamespace
+
+    from meridian.edge import RawStore
+
+    from ccxt_venues.__main__ import Plugin, market, product_map
+
+    assert isinstance(tmp_path, Path)
+    store = RawStore(tmp_path)
+    recorder = Recorder(INSTANCE)
+    lake = Lake()
+    recorder.bind(lake)
+    for venue in VENUES:
+        chosen = market(venue, store, synthetic=False)
+        lake.feeds[venue.id] = VenueFeed(chosen, product_map(store, venue, "live"),
+                                         owner=lake, offers=venue.offers)  # fmt: skip
+    plugin = Plugin(lake, store)
+    await plugin.on_settings(SimpleNamespace(values={"sample_data": True, "venue_okx": True}))
+    assert lake.enabled == {"okx"}
+    assert lake.feeds["okx"].products.read_at_ns and len(lake.feeds["okx"].products.listed) == 7
+    assert not lake.feeds["bybit"].products.read_at_ns
+    assert lake.feeds["okx"].market.session.mode == "synthetic"

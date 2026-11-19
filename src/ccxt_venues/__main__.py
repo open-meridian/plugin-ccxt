@@ -93,6 +93,16 @@ class Plugin:
             attribution(current.exchange, tags)
         self.synthetic = synthetic
         self.lake.enable(on)
+        # Answering from a venue, its listing is read on the first want, never
+        # before. With sample data each venue on is mapped at once, so a
+        # developer sees its markets before anything is wanted (as Kraken's).
+        for venue_id in sorted(on) if synthetic else ():
+            feed = self.lake.feeds[venue_id]
+            if not feed.products.read_at_ns:
+                try:
+                    await feed.map_products()
+                except Exception as failed:  # noqa: BLE001 - said on its pages, tried on a want
+                    log.warning("%s's synthetic listing was not read: %s", venue_id, failed)
         window = values.get(f"{KIND}_window_days")
         past = values.get(f"{KIND}_past_window")
         await self.store.tend(
