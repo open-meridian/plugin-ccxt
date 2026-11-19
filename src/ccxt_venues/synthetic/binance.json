@@ -1,0 +1,1057 @@
+{
+ "GET /api/v3/exchangeInfo": {
+  "body": {
+   "exchangeFilters": [],
+   "rateLimits": [],
+   "serverTime": 1791633599000,
+   "symbols": [
+    {
+     "baseAsset": "BTC",
+     "baseAssetPrecision": 8,
+     "baseCommissionPrecision": 8,
+     "filters": [
+      {
+       "filterType": "PRICE_FILTER",
+       "maxPrice": "1000000.00",
+       "minPrice": "0.00000001",
+       "tickSize": "0.00000001"
+      },
+      {
+       "filterType": "LOT_SIZE",
+       "maxQty": "9000.00",
+       "minQty": "0.00001",
+       "stepSize": "0.00001"
+      }
+     ],
+     "icebergAllowed": true,
+     "isMarginTradingAllowed": false,
+     "isSpotTradingAllowed": true,
+     "ocoAllowed": true,
+     "orderTypes": [
+      "LIMIT",
+      "MARKET"
+     ],
+     "permissionSets": [
+      [
+       "SPOT"
+      ]
+     ],
+     "permissions": [],
+     "quoteAsset": "USDT",
+     "quoteAssetPrecision": 8,
+     "quoteCommissionPrecision": 8,
+     "quotePrecision": 8,
+     "status": "TRADING",
+     "symbol": "BTCUSDT"
+    },
+    {
+     "baseAsset": "BTC",
+     "baseAssetPrecision": 8,
+     "baseCommissionPrecision": 8,
+     "filters": [
+      {
+       "filterType": "PRICE_FILTER",
+       "maxPrice": "1000000.00",
+       "minPrice": "0.00000001",
+       "tickSize": "0.00000001"
+      },
+      {
+       "filterType": "LOT_SIZE",
+       "maxQty": "9000.00",
+       "minQty": "0.00001",
+       "stepSize": "0.00001"
+      }
+     ],
+     "icebergAllowed": true,
+     "isMarginTradingAllowed": false,
+     "isSpotTradingAllowed": true,
+     "ocoAllowed": true,
+     "orderTypes": [
+      "LIMIT",
+      "MARKET"
+     ],
+     "permissionSets": [
+      [
+       "SPOT"
+      ]
+     ],
+     "permissions": [],
+     "quoteAsset": "USDC",
+     "quoteAssetPrecision": 8,
+     "quoteCommissionPrecision": 8,
+     "quotePrecision": 8,
+     "status": "TRADING",
+     "symbol": "BTCUSDC"
+    },
+    {
+     "baseAsset": "ETH",
+     "baseAssetPrecision": 8,
+     "baseCommissionPrecision": 8,
+     "filters": [
+      {
+       "filterType": "PRICE_FILTER",
+       "maxPrice": "1000000.00",
+       "minPrice": "0.00000001",
+       "tickSize": "0.00000001"
+      },
+      {
+       "filterType": "LOT_SIZE",
+       "maxQty": "9000.00",
+       "minQty": "0.00001",
+       "stepSize": "0.00001"
+      }
+     ],
+     "icebergAllowed": true,
+     "isMarginTradingAllowed": false,
+     "isSpotTradingAllowed": true,
+     "ocoAllowed": true,
+     "orderTypes": [
+      "LIMIT",
+      "MARKET"
+     ],
+     "permissionSets": [
+      [
+       "SPOT"
+      ]
+     ],
+     "permissions": [],
+     "quoteAsset": "USDT",
+     "quoteAssetPrecision": 8,
+     "quoteCommissionPrecision": 8,
+     "quotePrecision": 8,
+     "status": "TRADING",
+     "symbol": "ETHUSDT"
+    },
+    {
+     "baseAsset": "TKN",
+     "baseAssetPrecision": 8,
+     "baseCommissionPrecision": 8,
+     "filters": [
+      {
+       "filterType": "PRICE_FILTER",
+       "maxPrice": "1000000.00",
+       "minPrice": "0.00000001",
+       "tickSize": "0.00000001"
+      },
+      {
+       "filterType": "LOT_SIZE",
+       "maxQty": "9000.00",
+       "minQty": "0.00001",
+       "stepSize": "0.00001"
+      }
+     ],
+     "icebergAllowed": true,
+     "isMarginTradingAllowed": false,
+     "isSpotTradingAllowed": true,
+     "ocoAllowed": true,
+     "orderTypes": [
+      "LIMIT",
+      "MARKET"
+     ],
+     "permissionSets": [
+      [
+       "SPOT"
+      ]
+     ],
+     "permissions": [],
+     "quoteAsset": "USDT",
+     "quoteAssetPrecision": 8,
+     "quoteCommissionPrecision": 8,
+     "quotePrecision": 8,
+     "status": "TRADING",
+     "symbol": "TKNUSDT"
+    },
+    {
+     "baseAsset": "PLY",
+     "baseAssetPrecision": 8,
+     "baseCommissionPrecision": 8,
+     "filters": [
+      {
+       "filterType": "PRICE_FILTER",
+       "maxPrice": "1000000.00",
+       "minPrice": "0.00000001",
+       "tickSize": "0.00000001"
+      },
+      {
+       "filterType": "LOT_SIZE",
+       "maxQty": "9000.00",
+       "minQty": "0.00001",
+       "stepSize": "0.00001"
+      }
+     ],
+     "icebergAllowed": true,
+     "isMarginTradingAllowed": false,
+     "isSpotTradingAllowed": true,
+     "ocoAllowed": true,
+     "orderTypes": [
+      "LIMIT",
+      "MARKET"
+     ],
+     "permissionSets": [
+      [
+       "SPOT"
+      ]
+     ],
+     "permissions": [],
+     "quoteAsset": "USDT",
+     "quoteAssetPrecision": 8,
+     "quoteCommissionPrecision": 8,
+     "quotePrecision": 8,
+     "status": "TRADING",
+     "symbol": "PLYUSDT"
+    },
+    {
+     "baseAsset": "OLD",
+     "baseAssetPrecision": 8,
+     "baseCommissionPrecision": 8,
+     "filters": [
+      {
+       "filterType": "PRICE_FILTER",
+       "maxPrice": "1000000.00",
+       "minPrice": "0.00000001",
+       "tickSize": "0.00000001"
+      },
+      {
+       "filterType": "LOT_SIZE",
+       "maxQty": "9000.00",
+       "minQty": "0.00001",
+       "stepSize": "0.00001"
+      }
+     ],
+     "icebergAllowed": true,
+     "isMarginTradingAllowed": false,
+     "isSpotTradingAllowed": true,
+     "ocoAllowed": true,
+     "orderTypes": [
+      "LIMIT",
+      "MARKET"
+     ],
+     "permissionSets": [
+      [
+       "SPOT"
+      ]
+     ],
+     "permissions": [],
+     "quoteAsset": "USDT",
+     "quoteAssetPrecision": 8,
+     "quoteCommissionPrecision": 8,
+     "quotePrecision": 8,
+     "status": "BREAK",
+     "symbol": "OLDUSDT"
+    }
+   ],
+   "timezone": "UTC"
+  }
+ },
+ "GET /api/v3/klines?interval=1d&symbol=BTCUSDC": {
+  "body": [
+   [
+    1790812800000,
+    "61200.1",
+    "61200.1",
+    "61200.1",
+    "61200.1",
+    "12.5",
+    1790899199999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790899200000,
+    "61450.2",
+    "61450.2",
+    "61450.2",
+    "61450.2",
+    "12.5",
+    1790985599999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790985600000,
+    "61010.3",
+    "61010.3",
+    "61010.3",
+    "61010.3",
+    "12.5",
+    1791071999999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791072000000,
+    "61333.4",
+    "61333.4",
+    "61333.4",
+    "61333.4",
+    "12.5",
+    1791158399999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791158400000,
+    "61500.5",
+    "61500.5",
+    "61500.5",
+    "61500.5",
+    "12.5",
+    1791244799999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791244800000,
+    "61702.6",
+    "61702.6",
+    "61702.6",
+    "61702.6",
+    "12.5",
+    1791331199999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791331200000,
+    "61801.7",
+    "61801.7",
+    "61801.7",
+    "61801.7",
+    "12.5",
+    1791417599999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791417600000,
+    "62001.4",
+    "62001.4",
+    "62001.4",
+    "62001.4",
+    "12.5",
+    1791503999999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791504000000,
+    "62100.9",
+    "62100.9",
+    "62100.9",
+    "62100.9",
+    "12.5",
+    1791590399999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ]
+  ]
+ },
+ "GET /api/v3/klines?interval=1d&symbol=BTCUSDT": {
+  "body": [
+   [
+    1790812800000,
+    "61200.1",
+    "61200.1",
+    "61200.1",
+    "61200.1",
+    "12.5",
+    1790899199999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790899200000,
+    "61450.2",
+    "61450.2",
+    "61450.2",
+    "61450.2",
+    "12.5",
+    1790985599999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790985600000,
+    "61010.3",
+    "61010.3",
+    "61010.3",
+    "61010.3",
+    "12.5",
+    1791071999999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791072000000,
+    "61333.4",
+    "61333.4",
+    "61333.4",
+    "61333.4",
+    "12.5",
+    1791158399999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791158400000,
+    "61500.5",
+    "61500.5",
+    "61500.5",
+    "61500.5",
+    "12.5",
+    1791244799999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791244800000,
+    "61702.6",
+    "61702.6",
+    "61702.6",
+    "61702.6",
+    "12.5",
+    1791331199999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791331200000,
+    "61801.7",
+    "61801.7",
+    "61801.7",
+    "61801.7",
+    "12.5",
+    1791417599999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791417600000,
+    "62001.4",
+    "62001.4",
+    "62001.4",
+    "62001.4",
+    "12.5",
+    1791503999999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791504000000,
+    "62100.9",
+    "62100.9",
+    "62100.9",
+    "62100.9",
+    "12.5",
+    1791590399999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ]
+  ]
+ },
+ "GET /api/v3/klines?interval=1d&symbol=ETHUSDT": {
+  "body": [
+   [
+    1790812800000,
+    "2401.1",
+    "2401.1",
+    "2401.1",
+    "2401.1",
+    "12.5",
+    1790899199999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790899200000,
+    "2410.2",
+    "2410.2",
+    "2410.2",
+    "2410.2",
+    "12.5",
+    1790985599999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790985600000,
+    "2399.3",
+    "2399.3",
+    "2399.3",
+    "2399.3",
+    "12.5",
+    1791071999999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791072000000,
+    "2420.4",
+    "2420.4",
+    "2420.4",
+    "2420.4",
+    "12.5",
+    1791158399999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791158400000,
+    "2433.5",
+    "2433.5",
+    "2433.5",
+    "2433.5",
+    "12.5",
+    1791244799999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791244800000,
+    "2440.6",
+    "2440.6",
+    "2440.6",
+    "2440.6",
+    "12.5",
+    1791331199999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791331200000,
+    "2450.7",
+    "2450.7",
+    "2450.7",
+    "2450.7",
+    "12.5",
+    1791417599999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791417600000,
+    "2460.8",
+    "2460.8",
+    "2460.8",
+    "2460.8",
+    "12.5",
+    1791503999999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791504000000,
+    "2470.9",
+    "2470.9",
+    "2470.9",
+    "2470.9",
+    "12.5",
+    1791590399999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ]
+  ]
+ },
+ "GET /api/v3/klines?interval=1d&symbol=PLYUSDT": {
+  "body": [
+   [
+    1790812800000,
+    "1.1",
+    "1.1",
+    "1.1",
+    "1.1",
+    "12.5",
+    1790899199999,
+    "1000",
+    0,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790899200000,
+    "1.1",
+    "1.1",
+    "1.1",
+    "1.1",
+    "12.5",
+    1790985599999,
+    "1000",
+    0,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790985600000,
+    "1.1",
+    "1.1",
+    "1.1",
+    "1.1",
+    "12.5",
+    1791071999999,
+    "1000",
+    0,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791072000000,
+    "1.1",
+    "1.1",
+    "1.1",
+    "1.1",
+    "12.5",
+    1791158399999,
+    "1000",
+    0,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791158400000,
+    "1.1",
+    "1.1",
+    "1.1",
+    "1.1",
+    "12.5",
+    1791244799999,
+    "1000",
+    0,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791244800000,
+    "1.1",
+    "1.1",
+    "1.1",
+    "1.1",
+    "12.5",
+    1791331199999,
+    "1000",
+    0,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791331200000,
+    "1.1",
+    "1.1",
+    "1.1",
+    "1.1",
+    "12.5",
+    1791417599999,
+    "1000",
+    0,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791417600000,
+    "1.1",
+    "1.1",
+    "1.1",
+    "1.1",
+    "12.5",
+    1791503999999,
+    "1000",
+    0,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791504000000,
+    "1.1",
+    "1.1",
+    "1.1",
+    "1.1",
+    "12.5",
+    1791590399999,
+    "1000",
+    0,
+    "1",
+    "1",
+    "0"
+   ]
+  ]
+ },
+ "GET /api/v3/klines?interval=1d&symbol=TKNUSDT": {
+  "body": [
+   [
+    1790812800000,
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "12.5",
+    1790899199999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790899200000,
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "12.5",
+    1790985599999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1790985600000,
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "12.5",
+    1791071999999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791072000000,
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "12.5",
+    1791158399999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791158400000,
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "12.5",
+    1791244799999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791244800000,
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "12.5",
+    1791331199999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791331200000,
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "0.000012000000000001",
+    "12.5",
+    1791417599999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791417600000,
+    "0.000012345678901234",
+    "0.000012345678901234",
+    "0.000012345678901234",
+    "0.000012345678901234",
+    "12.5",
+    1791503999999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ],
+   [
+    1791504000000,
+    "0.000012345678901299",
+    "0.000012345678901299",
+    "0.000012345678901299",
+    "0.000012345678901299",
+    "12.5",
+    1791590399999,
+    "1000",
+    4100,
+    "1",
+    "1",
+    "0"
+   ]
+  ]
+ },
+ "GET /api/v3/ticker/24hr?symbol=BTCUSDC": {
+  "body": {
+   "askPrice": "62007.4",
+   "askQty": "0.33",
+   "bidPrice": "62007.1",
+   "bidQty": "0.92",
+   "closeTime": 1791633599000,
+   "count": 2,
+   "firstId": 1,
+   "highPrice": "62006.75",
+   "lastId": 2,
+   "lastPrice": "62006.75",
+   "lastQty": "0.01",
+   "lowPrice": "62006.75",
+   "openPrice": "62006.75",
+   "openTime": 1791547199000,
+   "prevClosePrice": "62006.75",
+   "priceChange": "0",
+   "priceChangePercent": "0",
+   "quoteVolume": "1",
+   "symbol": "BTCUSDC",
+   "volume": "1",
+   "weightedAvgPrice": "62006.75"
+  }
+ },
+ "GET /api/v3/ticker/24hr?symbol=BTCUSDT": {
+  "body": {
+   "askPrice": "61991.8",
+   "askQty": "0.33",
+   "bidPrice": "61991.7",
+   "bidQty": "0.92",
+   "closeTime": 1791633599000,
+   "count": 2,
+   "firstId": 1,
+   "highPrice": "61988.9",
+   "lastId": 2,
+   "lastPrice": "61988.9",
+   "lastQty": "0.01",
+   "lowPrice": "61988.9",
+   "openPrice": "61988.9",
+   "openTime": 1791547199000,
+   "prevClosePrice": "61988.9",
+   "priceChange": "0",
+   "priceChangePercent": "0",
+   "quoteVolume": "1",
+   "symbol": "BTCUSDT",
+   "volume": "1",
+   "weightedAvgPrice": "61988.9"
+  }
+ },
+ "GET /api/v3/ticker/24hr?symbol=TKNUSDT": {
+  "body": {
+   "askPrice": "0.00000000",
+   "askQty": "0.33",
+   "bidPrice": "0.000012345678901",
+   "bidQty": "0.92",
+   "closeTime": 1791633599000,
+   "count": 2,
+   "firstId": 1,
+   "highPrice": "0.000012345678901234",
+   "lastId": 2,
+   "lastPrice": "0.000012345678901234",
+   "lastQty": "0.01",
+   "lowPrice": "0.000012345678901234",
+   "openPrice": "0.000012345678901234",
+   "openTime": 1791547199000,
+   "prevClosePrice": "0.000012345678901234",
+   "priceChange": "0",
+   "priceChangePercent": "0",
+   "quoteVolume": "1",
+   "symbol": "TKNUSDT",
+   "volume": "1",
+   "weightedAvgPrice": "0.000012345678901234"
+  }
+ },
+ "GET /fapi/v1/depth?symbol=BTCUSDT": {
+  "body": {
+   "E": 1791633599000,
+   "T": 1791633599000,
+   "asks": [
+    [
+     "61980.2",
+     "0.75"
+    ]
+   ],
+   "bids": [
+    [
+     "61980.0",
+     "1.25"
+    ]
+   ],
+   "lastUpdateId": 1027024
+  }
+ },
+ "GET /fapi/v1/exchangeInfo": {
+  "body": {
+   "assets": [],
+   "exchangeFilters": [],
+   "rateLimits": [],
+   "serverTime": 1791633599000,
+   "symbols": [
+    {
+     "baseAsset": "BTC",
+     "baseAssetPrecision": 8,
+     "contractType": "PERPETUAL",
+     "deliveryDate": 4133404800000,
+     "filters": [
+      {
+       "filterType": "PRICE_FILTER",
+       "maxPrice": "1000000.00",
+       "minPrice": "0.00000001",
+       "tickSize": "0.00000001"
+      },
+      {
+       "filterType": "LOT_SIZE",
+       "maxQty": "9000.00",
+       "minQty": "0.00001",
+       "stepSize": "0.00001"
+      }
+     ],
+     "marginAsset": "USDT",
+     "onboardDate": 1569398400000,
+     "orderTypes": [
+      "LIMIT"
+     ],
+     "pair": "BTCUSDT",
+     "pricePrecision": 2,
+     "quantityPrecision": 3,
+     "quoteAsset": "USDT",
+     "quotePrecision": 8,
+     "status": "TRADING",
+     "symbol": "BTCUSDT",
+     "timeInForce": [
+      "GTC"
+     ],
+     "underlyingType": "COIN"
+    }
+   ],
+   "timezone": "UTC"
+  }
+ },
+ "GET /fapi/v1/ticker/24hr?symbol=BTCUSDT": {
+  "body": {
+   "closeTime": 1791633599000,
+   "count": 2,
+   "firstId": 1,
+   "highPrice": "61980.1",
+   "lastId": 2,
+   "lastPrice": "61980.1",
+   "lastQty": "0.002",
+   "lowPrice": "61980.1",
+   "openPrice": "61980.1",
+   "openTime": 1791547199000,
+   "priceChange": "0",
+   "priceChangePercent": "0",
+   "quoteVolume": "1",
+   "symbol": "BTCUSDT",
+   "volume": "1",
+   "weightedAvgPrice": "61980.1"
+  }
+ }
+}

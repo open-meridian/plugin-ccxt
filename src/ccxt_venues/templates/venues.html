@@ -1,0 +1,19 @@
+{#- Venues: each venue this plugin reaches through CCXT, on or off, and what
+    it serves; one-line rows, each row's details in its pop-up. -#}
+{% extends "meridian/base.html" %}
+{% block content %}
+{% if not data.on %}
+<div class="empty-state"><strong>No venue is on</strong><p>Each venue answers nothing until a deployment admin turns it on in Settings.</p></div>
+{% endif %}
+<section class="panel">
+<h2>Venues</h2>
+<table class="one-line">
+<thead><tr><th>Venue</th><th>State</th><th class="wide-only">Serves</th><th class="wide-only">Markets read</th><th class="num">Listed</th><th class="more"><span class="visually-hidden">Details</span></th></tr></thead>
+<tbody>
+{% for row in data.venues %}
+<tr><td>{{ row.venue }}</td><td><span class="badge{{ ' good' if row.on else '' }}">{{ "On" if row.on else "Off" }}</span></td><td class="wide-only">{{ row.serves }}</td><td class="wide-only">{{ row.markets }}</td><td class="num">{{ row.listed }}</td>
+<td class="more"><details class="row-detail" name="venues"><summary aria-label="Details of {{ row.venue }}">…</summary><div class="row-detail-pop"><h3>{{ row.venue }}</h3><dl><dt>CCXT</dt><dd><code>{{ row.ccxt_id }}</code>, {{ row.ccxt_version }}</dd><dt>Serves</dt><dd>{{ row.serves }}</dd><dt>Not served</dt><dd>{{ row.not_served }}</dd><dt>Markets read</dt><dd>{{ row.markets }}</dd><dt>Day</dt><dd>{{ row.day }}</dd><dt>Reach</dt><dd>{{ row.reach }}</dd></dl></div></details></td></tr>
+{% endfor %}
+</tbody></table>
+</section>
+{% endblock %}

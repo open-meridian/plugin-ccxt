@@ -1,0 +1,9 @@
+{#- Which venue a page shows: a plain form, so it works without the kit and
+    fits a phone's width; the page shows the venue chosen, or the first one on. -#}
+<form method="get" class="filters" aria-label="Venue">
+<label class="field">Venue <select name="venue">
+{% for each in choices %}<option value="{{ each.id }}"{% if each.id == chosen %} selected{% endif %}>{{ each.name }}{{ "" if each.on else " (off)" }}</option>{% endfor %}
+</select></label>
+<button type="submit">Show</button>
+</form>
+{% if not on %}<div class="notice info" role="status">{{ name }} is off: it answers nothing until a deployment admin turns it on in Settings.</div>{% endif %}
