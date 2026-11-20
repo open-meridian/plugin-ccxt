@@ -15,7 +15,7 @@ requires-python = ">=3.11"
 # as the gate (README, "Bumping CCXT"); venues.py's CCXT_VERSION says the
 # same, and the tests hold the two together.
 dependencies = [
-  "open-meridian==0.37.0",
+  "open-meridian==0.37.1",
   "ccxt==4.5.93",
 ]
 

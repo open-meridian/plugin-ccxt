@@ -13,3 +13,5 @@ public market data through CCXT 4.5.93, each venue off until turned on.
   CCXT pinned exactly.
 - Built on open-meridian 0.37.0, which waits for a lost sidecar; `meridian`
   0.1.61 in the check.
+
+SDK 0.37.1: a raw record kept from two threads at once waits instead of being dropped.
