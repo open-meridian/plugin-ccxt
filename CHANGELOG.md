@@ -11,3 +11,5 @@ public market data through CCXT 4.5.93, each venue off until turned on.
 - Guards: no key, Hyperliquid's builder fee off and never approved, CCXT's
   broker attribution off unless turned on, our own client order ID always,
   CCXT pinned exactly.
+- Built on open-meridian 0.37.0, which waits for a lost sidecar; `meridian`
+  0.1.61 in the check.
